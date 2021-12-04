@@ -85,8 +85,7 @@ Web框架
 1. <a href="{% url 'learning_logs:edit_entry' entry.id %}">edit entry</a> 加入链接
 2. <a type="button" class="btn btn-primary" 
    href="{% url 'learning_logs:edit_entry' entry.id %}"> edit entry</a> 按钮
-3. <p align="right"></p> 靠右
-4. 404表示文件或资源未找到; 500-内部服务器错误; 400-错误的请求
+3. 404表示文件或资源未找到; 500-内部服务器错误; 400-错误的请求
 
 ### 完善
 1. 加入标题 （bingo）
