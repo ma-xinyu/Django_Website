@@ -5,7 +5,7 @@ python项目开发
 
 #### 软件架构
 Web框架
-
+https://mxy-log.herokuapp.com/(网站地址)
 
 #### 安装教程
 
