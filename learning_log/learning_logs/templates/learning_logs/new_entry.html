@@ -1,0 +1,15 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+    <p><h4><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></h4></p>
+
+    <p><h5>添加新纪录</h5></p>
+    <form action="{% url 'learning_logs:new_entry' topic.id %}" method='post'>
+        {% csrf_token %}
+        <label>标 题</label>
+        <input type="title" class="form-control" name="title" id="id_title"><br>
+        <label>正 文</label>
+        <textarea style="width:100%; height:180px;" name="text" class="form-control" cols="80" rows="10" required="" id="id_text"></textarea><br>
+    <button name="submit">添 加</button>
+    </form>
+{% endblock content %}
